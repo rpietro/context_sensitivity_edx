@@ -1,4 +1,4 @@
-# Can you tell me something useful? Patient personalized learning driven by semantic context sensitivity
+# Can you tell me something useful? Personalized learning in healthcare driven by semantic context sensitivity
 
 
 ## Abstract
@@ -9,8 +9,47 @@
 
 While the amount and quality of research in healthcare improves every year, information reaching patients and the general public still lags far behind <!-- ref -->. 
 
+* context sensitivity in education and personalization
+* use of ontologies in context sensitivity
+
+In face of the previously mentioned gaps, the objective of this article is twofold. First, to enhance an existing learning management system with a semantically-driven, context sensitive framework to allow learners to have not only their courses personalized to the concepts that they individually need to learn, but to also have these concepts presented in a way that is meaningful in the context of that particular individual. Since we make use of a semantic model, a secondary objective is to create an ontology layer that provides the context sensitivity while connecting the relational and document-based databases in our learning management system.
 
 ## Methods
+
+### Informal use case
+
+1. instructor gathers information about concepts and situations on each of a group of learners
+2. each learner receives concepts of interest to her as well as situated within her own context with the [Open edX]() system
+
+For the purposes of this article we have used the following matrix of concepts and situations within 
+
+<!--
+situation: healthcare professionals (nurses, physicians, physical therapists) and patients
+
+concepts: post-mastectomy treatment, post-prostatectomy treatment
+ -->
+
+
+### [Open edX]() description
+
+* videos
+* HTML
+* exercises
+
+
+
+### Ontology description
+
+
+### Integration with existing relational and document-based databases in [Open edX]()
+
+<!-- here to describe the layer on top of the system -->
+
+
+
+
+
+
 
 <!-- 
 
