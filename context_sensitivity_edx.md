@@ -6,7 +6,6 @@ legal, tem algum tempo, vamos começar e ver até onde o artigo pode chegar até
 -->
 
 
-# Can you tell me something useful? Personalized learning in healthcare driven by semantic context sensitivity 
 <!--(acho que podemos trocar context sensitivity por context-awareness, termo mais difundido pela comunidade da comp) -->
 
 ## Abstract
