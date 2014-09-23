@@ -1,4 +1,4 @@
-# Can you tell me something useful? Patient personalized learning driven by semantic context sensitivity
+# Can you tell me something useful?  personalized learning driven by semantic context sensitivity
 
 
 ## Abstract
@@ -7,7 +7,7 @@
 
 ## Introduction
 
-While the amount and quality of research in healthcare improves every year, information reaching patients and the general public still lags far behind <!-- ref -->. 
+While the amount and quality of research in healthcare improves every year, the usefulness of the information reaching healthcare providers lags far behind <!-- ref -->. For example <!-- add-->. This discrepancy results from a number of factors. First, most researchers do not consider healthcare providers as an information consumer, primarily focusing on their research peers. Second, the information is not provided in a way that is personalized at the individual needs of each patient. Despite these gaps,  
 
 
 ## Methods
