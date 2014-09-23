@@ -18,7 +18,9 @@ While the amount and quality of research in healthcare improves every year, the 
 
  * context sensitivity in education and personalization
 
-<!-- (acho que ficou meio "solto" em relação a saúde, teria que melhorar)
+<!-- (acho que ficou meio "solto" em relação a saúde, teria que melhorar) 
+
+quais seriam referencias que possa ser usadas aqui?
 
 Education is continually changing in relation to teaching processes. In recent years, technologies like mobile computing and internet have contributed to greater dissemination of information and study support materials (melhor trocar ref). Before this vast content provided by easy access to internet by students and teachers, it becomes increasingly necessary to have information filters, so it is possible to get information reliably and restricted to the domain over which the user is studying or working.
 Currently, teachers assemble and distribute materials in virtual learning environments (VLE). These materials are distributed and activities are executed in these environments for all participants of the course in the same way, regardless of important context information as the student's profile, their pre-course school history (to verify the abilities of the student in course related fields), among others.
@@ -34,6 +36,8 @@ Thus, context awareness has contributed in many applications to provide the retr
 Dey et al (2001) defined context as "any information que can be used to characterize the situation of an entity". Recent work have proposed some changes in how context should be treated in computer systems. In these newer definitions (Makris et al, 2013) (Perera et al, 2013), context must be inferred from a continuous flow of information of raw data which is obtained by systems. 
 Context information are often represented in ontologies due to a number of factors, including level of reusability and expressivity of definitions (Strang; Popien, 2004) (Bettini et al, 2010) (Bellavista et al, 2012). 
 O ambiente virtual [Open edX]() é utilizado para MOOCs em diversas universidades para diversos cursos. Na área da saúde, o [Open edX]() é utilizado pela universidade de Duke no curso de NOME_DO_CURSO para FUNCAO. PROBLEMA. 
+
+são mais de 30 universidades - veja http://code.edx.org/
 -->
 
 In face of the previously mentioned gaps, the objective of this article is twofold. First, to enhance an existing learning management system with a semantically-driven, context sensitive framework to allow learners to have not only their courses personalized to the concepts that they individually need to learn, but to also have these concepts presented in a way that is meaningful in the context of that particular individual. Since we make use of a semantic model, a secondary objective is to create an ontology layer that provides the context sensitivity while connecting the relational and document-based databases in our learning management system.
@@ -45,12 +49,8 @@ In face of the previously mentioned gaps, the objective of this article is twofo
 1. instructor gathers information about concepts and situations on each of a group of learners
 2. each learner receives concepts of interest to her as well as situated within her own context with the [Open edX]() system
 
-For the purposes of this article we have used the following matrix of concepts and situations within 
-<!--
-situation: healthcare professionals (nurses, physicians, physical therapists) and patients
+For the purposes of this article we have used the following matrix of concepts and situations within a course to educate healthcare professionals and patients in relation to motivational interviewing. Motivational interviewing, or "a collaborative, person-centered form of guiding to elicit and strengthen motivation for change," interesting in that it is usually targetted at professionals who would like to assist others in achieving change. However, one could argue that the same methods could be used by the people themselves who want to achieve change. In other words, one could train individuals in different contexts, be it for a personal change context or in somebody else's context. In addition, motivational interviewing can also be applied to achieve change in different conceptual areas, such as health, work, among others. 
 
-concepts: post-mastectomy treatment, post-prostatectomy treatment
- -->
 
 
 ### [Open edX]() description
