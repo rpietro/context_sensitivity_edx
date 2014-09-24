@@ -29,6 +29,8 @@ situation: healthcare professionals (nurses, physicians, physical therapists) an
 concepts: post-mastectomy treatment, post-prostatectomy treatment
  -->
 
+<!-- conceitos (selecionado por item bank/lucas): reflexo endireitamento, utilizar motivação do paciente ao invés da epidemiologia/profissional, resumir o que o paciente falou; situações (selecionado por lista): adesão medicação, dieta, exercício; learning resources (videos, exercicios/itens, leituras); https://plus.google.com/hangouts/_/calendar/dmluaWNpdXNtYXJhbkBnbWFpbC5jb20.8jd70169ocma1gpkm5p5i8r32g?authuser=0 add gustavo master (A) conceitos tacitos - expressao corporal -->
+
 
 ### [Open edX]() description
 
