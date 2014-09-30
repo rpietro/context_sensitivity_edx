@@ -6,7 +6,6 @@ legal, tem algum tempo, vamos começar e ver até onde o artigo pode chegar até
 
 ## Abstract
 
-
 ## Introduction
 
 Education is continually changing in relation to teaching processes. In recent years, technologies like mobile computing and internet have contributed to greater dissemination of information and study support materials <!--(Cooper; Sahami, 2013)-->. Before this vast content provided by easy access to internet by students and teachers, it becomes increasingly necessary to have information filters, so it is possible to get information reliably and restricted to the domain over which the user is studying or working <!-- (Cooper; Sahami, 2013) -->.
@@ -28,7 +27,7 @@ While the amount and quality of research in healthcare improves every year, the 
 
 In face of the previously mentioned gaps, the objective of this article is twofold. First, to enhance an existing learning management system with a semantically-driven, context sensitive framework to allow learners to have not only their courses personalized to the concepts that they individually need to learn, but to also have these concepts presented in a way that is meaningful in the context of that particular individual. Since we make use of a semantic model, a secondary objective is to create an ontology layer that provides the context sensitivity while connecting the relational and document-based databases in our learning management system.
 
-The paper is organized as follows. Section 2 presents the main concepts related to this work as well as the description of the concepts and situations involved in the study environment. In Section 3 an ontology is presented for representing contextual information and domain related to the case study. Also in this section, the conceptual validation of the ontology and anintegration between the ontology defined in this paper and the environment [Open EDX]() for information retrieval based on context are presented. Section 4 presents the main results and discussion about the contributions of this paper. Section 5 provides the concluding remarks of this work and the research agenda. 
+The paper is organized as follows. Section 2 presents the main concepts related to this work as well as the description of the concepts and situations involved in the study environment. In Section 3 an ontology is presented for representing contextual information and domain related to the case study. Also in this section, the conceptual validation of the ontology and anintegration between the ontology defined in this paper and [Open EDX]() environment for information retrieval based on context are presented. Section 4 presents the main results and discussion about the contributions of this paper. Section 5 provides the concluding remarks of this work and the research agenda. 
 
 ## Methods
 
@@ -39,6 +38,7 @@ The paper is organized as follows. Section 2 presents the main concepts related 
 	Link para entrevista motivacional (falando um pouco dos conceitos gerais e situações que devem ser levadas em consideração)
 	Com base nos conceitos explicados anteriormente, descrevemos um cenário de uso do OpenEDX como ferramenta de suporte ao ensino (aqui não ficou claro pra mim ainda, seria como ferramenta de suporte a um curso de entrevista motivacional, ou suporte a entrevistas motivacionais em si, com pacientes e tudo ?)
 -->
+
 1. instructor gathers information about concepts and situations on each of a group of learners
 2. each learner receives concepts of interest to her as well as situated within her own context with the [Open edX]() system
 
@@ -46,8 +46,12 @@ For the purposes of this article we have used the following matrix of concepts a
 
 <!-- conceitos (selecionado por item bank/lucas): reflexo endireitamento, utilizar motivação do paciente ao invés da epidemiologia/profissional, resumir o que o paciente falou; situações (selecionado por lista): adesão medicação, dieta, exercício; learning resources (videos, exercicios/itens, leituras); https://plus.google.com/hangouts/_/calendar/dmluaWNpdXNtYXJhbkBnbWFpbC5jb20.8jd70169ocma1gpkm5p5i8r32g?authuser=0 add gustavo master (A) conceitos tacitos - expressao corporal -->
 
-### [Open edX]() description
+### [Open edX]() Environment
 
+<!--
+breve descrição da plataforma
+descrição de materiais
+-->
 * videos
 * HTML
 * exercises
@@ -72,6 +76,9 @@ Isso, temos que ver melhor ainda quais informações de contexto são relevantes
 
 ## Results and Discussion
 <!-- Pensei em colocarmos na mesma seção. O que acha ? -->
+
+## Conclusions
+<!-- fechamento -->
 
 ## References
 <!-- legal, por favor use bibtex que o pandoc integra - veja http://johnmacfarlane.net/pandoc/demos.html -->
