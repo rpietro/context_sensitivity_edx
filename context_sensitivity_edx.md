@@ -11,7 +11,7 @@ legal, tem algum tempo, vamos começar e ver até onde o artigo pode chegar até
 Education is continually changing in relation to teaching processes. In recent years, technologies like mobile computing and internet have contributed to greater dissemination of information and study support materials <!--(Cooper; Sahami, 2013)-->. Before this vast content provided by easy access to internet by students and teachers, it becomes increasingly necessary to have information filters, so it is possible to get information reliably and restricted to the domain over which the user is studying or working <!-- (Cooper; Sahami, 2013) -->.
 
 Currently, teachers assemble and distribute materials in virtual learning environments (VLE). These materials are distributed and activities are executed in these environments for all participants of the course in the same way, regardless of important context information as the student's profile, their pre-course school history (to verify the abilities of the student in course related fields), among others.
-This problem is compounded in Massive Open Online Courses (MOOCs) because there is a greater variation in relation to cultural, geographical issues and variation in profiles of students. Thus, it is necessary that context information are taken into account in any way in the distribution of materials and activities for students of these courses<!-- (Cooper; Sahami, 2013) (Gutiírrez et al, 2014)-->.
+This problem is compounded in Massive Open Online Courses (MOOCs) because there is a greater variation in relation to cultural, geographical issues and variation in profiles of students. Thus, it is necessary that context information are taken into account in any way in the distribution of materials and activities for students of these courses <!-- (Cooper; Sahami, 2013) (Gutiírrez et al, 2014)-->.
 
 Context awareness has been applied to various fields of application and several ways in computing. One of the most common ways of using context information in computer systems is the retrieval of information based on context. Information retrieval can be applied together with other recovery techniques and their application can be performed in the pre-filtering information recovery, post filtration in information retrieval, or the context modeling in conjunction with the modeling of information <!--(Adomavicius et al, 2011)-->.
 
@@ -20,8 +20,9 @@ Dey et al (2001) defined context as "any information que can be used to characte
 Context information are often represented in ontologies due to a number of factors, including level of reusability and expressivity of definitions <!--(Strang; Popien, 2004) (Bettini et al, 2010) (Bellavista et al, 2012)-->. 
 [Open EDX]() is used in several university MOOCs, including Stanford, Harvard and MIT, and in different courses. 
 
-<!-- Acho que aqui podemos fazer o link do OpenEDX com entrevista motivacional (como ferramenta de suporte)  
-In healthcare, the [Open EDX]() is used by Duke University in the course of--> <!--NOME_DO_CURSO --><!--FUNCAO. PROBLEMA-->. 
+<!-- trecho do texto do gustavo -->  
+In healthcare domain, [Open EDX]() is used by Duke University in the Motivational Inverviewing (MI) course. MI is a patient-centered approach to behavioral changes has showed to be effective in increasing physical activity and smoking interruption. This group of techniques has been increasingly studied and it efficacy is significant in a broad range of healthy bevahiors (Cole et al, 2011).However, this group of techniques is still not popular among health practitioners and its extremely important to disseminate Motivational Interview for general health care <!--(Anstiss, 2009)-->. 
+<!-- /trecho do texto do gustavo -->
 
 While the amount and quality of research in healthcare improves every year, the usefulness of the information reaching healthcare providers lags far behind <!-- ref -->. For example <!-- add-->. This discrepancy results from a number of factors. First, most researchers do not consider healthcare providers as an information consumer, primarily focusing on their research peers. Second, the information is not provided in a way that is personalized at the individual needs of each patient. 
 
@@ -29,7 +30,44 @@ In face of the previously mentioned gaps, the objective of this article is twofo
 
 The paper is organized as follows. Section 2 presents the main concepts related to this work as well as the description of the concepts and situations involved in the study environment. In Section 3 an ontology is presented for representing contextual information and domain related to the case study. Also in this section, the conceptual validation of the ontology and anintegration between the ontology defined in this paper and [Open EDX]() environment for information retrieval based on context are presented. Section 4 presents the main results and discussion about the contributions of this paper. Section 5 provides the concluding remarks of this work and the research agenda. 
 
+## Methods
 
+In the following sections we start by defining an informal use case, which is the default for the [UPON](). We then define the corresponding structure for the Open edX Platform, the ontology providing the context sensitivity, and how it is integrated into the Open edX platform, with particular detail on how the ontology serves as a layer on top of the relation and document-based databases within Open edX.
+<!-- TEXTO GUSTAVO
+Around 117 million Americans have at least one chronic health condition (Ward et al., 2012) and, according to the Centers for Disease Control and Prevention (CDC), 7 of the top 10 causes of death in the United States (US) are chronic diseases (CDC, 2013). Chronic Diseases as for example, heart disease, stroke, cancer, diabetes and obesity, have huge impact in productivity and in health costs (US Department of Health and Human Services, 2014). For example, the costs of just 2 conditions (heart disease and stroke) were about $315.4 billion in 2010 (American Heart Association, 2014)  In this context, we highlight an important particularity of chronic diseases: they are heavily dependent on bevahioral changes to be prevented or treated (Rollnick et al, 2008). Nonetheless, unhealthy habits are extremely common in the adult population (Fryar and Chen,2012; Cogswell, 2012) and this contributes to the steady increase of chronic health problems. 
+Two  behavioral interventions, the promotion of physical activity and smoke cessation, would have a large impact on public health if properly motivated (CDC, 2014). For example, the majority (52%) of adults  do not practice aerobic exercise or physical activity in the recommended levels (American Heart Association, 2014) while smoking is the number one preventable cause of death in the world(REF). Motivational interviewing (MI), a patient-centered approach to behavioral changes has showed to be effective in increasing physical activity and smoking interruption. This group of techniques has been increasingly studied and it efficacy is significant in a broad range of healthy bevahiors (Cole et al, 2011).However, this group of techniques is still not popular among health practitioners and its extremely important to disseminate Motivational Interview for general health care (Anstiss, 2009). 
+-->
+
+### Informal use case
+
+<!--
+	Acho que aqui poderíamos começar falando da importancia de promoção de exercicio e o problema do tabagismo,
+	Link para entrevista motivacional (falando um pouco dos conceitos gerais e situações que devem ser levadas em consideração)
+	Com base nos conceitos explicados anteriormente, descrevemos um cenário de uso do OpenEDX como ferramenta de suporte ao ensino (suporte ao curso de entrevista motivacional)
+-->
+
+1. instructor gathers information about concepts and situations on each of a group of learners
+2. each learner receives concepts of interest to her as well as situated within her own context with the [Open edX]() system. 
+
+For the purposes of this article we have used the following simplified matrix of concepts and situations within a course to educate healthcare professionals and patients in relation to motivational interviewing. Motivational interviewing, or "a collaborative, person-centered form of guiding to elicit and strengthen motivation for change" interesting in that it is usually targetted at professionals who would like to assist others in achieving change. However, one could argue that the same methods could be used by the people themselves who want to achieve change. In other words, one could train individuals in different contexts, be it for a personal change context or in somebody else's context. In addition, motivational interviewing can also be applied to achieve change in different conceptual areas, such as health, work, among others. 
+
+
+|Concept to be learned |General concept learning | Learning applied to a physical exercice situation | Learning in smoking cessation situation|
+|---|----|----|-----|
+|Resisting the rightning reflex. |Acho que em 4-5 minutos conseguimos fazer um vídeo com as vantagens e o embasamento de resistir ao reflexo de consertar as coisas (n vai ser nada complicado). |Podemos abordar diversos exemplos, por exemplo, um paciente sedentário que fala de uma extremamente sedentária e o profissional tem q resistir. |Muitas possibilidades tb. Um paciente pode dizer q mente a quantidade q fuma ou q fuma uma quantidade absurda...|
+|Listening to your patient’s motivation |Vídeo geral é tranquilo. Dizer basicamente como “ler” motivações. Tenho até vídeo pronto. |Os exemplos podem ir de fazer exercício para diminuir a ansiedade, pela saúde, p melhorar o sono, p melhorar a aparência, etc|Vários motivos podem ser abordados: motivos de saúde, preocupação com o fumo passivo do filho, questões estéticas, etc |
+|Empowering your patient |Basicamente é definir estratégias juntamente com o paciente ao invés de impor soluções.| Ver qual o exercício q o paciente mais gosta, ver qual horário é melhor, ver como começar, etc. | Ver se o paciente quer medicação oral, ou selo de nicotina pela pela, em que dia parar, como diminuir a fissura.|
+
+<!-- modifiquei um pouco -->
+Based on this simplified matrix, a corresponding workflow in [Open edX]() would be roughly as follows (Figure 1):
+![Figure 1](http://http://inf.ufrgs.br/~vmaran/img.png "Figure 1: Sequence Diagram of Learner's first interaction with the course.")
+First, the learner logs into the system (1). Logged in, he recieves a survey (2) and answer it (3) choosing among the following choices:
+	* which two concepts the learner would like to learn among the following choices: (a) Resisting the rightning reflex, (b) listening to your patient’s motivation, (c) empowering your patient
+	* in which single situation the learner would be more likely to apply each of those concepts: (a) Physical exercise and (b) smoking cessation
+Based on the responses, the system classifies the available content (4), an present the content (videos, exercises and readings) to the learner (5). For example, if the learner chooses to learn (a) the concept of resisting the rightning reflex in a situation where a patient needs to improve her physical exercise habits and (b) the concept of empowering your patient in a situation where a patient would like to stop smoking, then the ontology would determine that:
+	* both general concept sections (video, exercises and readings) would be delivered to the individual courses of each learner
+	* both concept sections (video, exercises and readings) in their respective situations would be delivered to the individual courses of each learner
+[Open edX]() offers a tool that allows content providers to tag content <!-- Aubert et al, 2014 (precisamos confirmar esta info) -->. This way, it is possible to link the tagged context to context information and give to the learner a set of materials based on his actual context information. 
 
 <!-- Around 117 million Americans have at least one chronic health condition (Ward et al., 2012) and, according to the Centers for Disease Control and Prevention (CDC), 7 of the top 10 causes of death in the United States (US) are chronic diseases (CDC, 2013). Chronic Diseases as for example, heart disease, stroke, cancer, diabetes and obesity, have huge impact in productivity and in health costs (US Department of Health and Human Services, 2014). For example, the costs of just 2 conditions (heart disease and stroke) were about $315.4 billion in 2010 (American Heart Association, 2014)  In this context, we highlight an important particularity of chronic diseases: they are heavily dependent on bevahioral changes to be prevented or treated (Rollnick et al, 2008). Nonetheless, unhealthy habits are extremely common in the adult population (Fryar and Chen,2012; Cogswell, 2012) and this contributes to the steady increase of chronic health problems. 
 Two  behavioral interventions, the promotion of physical activity and smoke cessation, would have a large impact on public health if properly motivated (CDC, 2014). For example, the majority (52%) of adults  do not practice aerobic exercise or physical activity in the recommended levels (American Heart Association, 2014) while smoking is the number one preventable cause of death in the world(REF). Motivational interviewing (MI), a patient-centered approach to behavioral changes has showed to be effective in increasing physical activity and smoking interruption. This group of techniques has been increasingly studied and it efficacy is significant in a broad range of healthy bevahiors (Cole et al, 2011).However, this group of techniques is still not popular among health practitioners and its extremely important to disseminate Motivational Interview for general health care (Anstiss, 2009). 
@@ -104,59 +142,23 @@ Interviewing and Psychiatry:
 Use in Addiction Treatment, Risky
 Drinking and Routine Practice -->
 
-## Methods
-
-In the following sections we start by defining an informal use case, which is the default for the [UPON](). We then define the corresponding structure for the Open edX Platform, the ontology providing the context sensitivity, and how it is integrated into the Open edX platform, with particular detail on how the ontology serves as a layer on top of the relation and document-based databases within Open edX.
-
-
-### Informal use case
-
-<!--
-	Acho que aqui poderíamos começar falando da importancia de promoção de exercicio e o problema do tabagismo,
-	Link para entrevista motivacional (falando um pouco dos conceitos gerais e situações que devem ser levadas em consideração)
-	Com base nos conceitos explicados anteriormente, descrevemos um cenário de uso do OpenEDX como ferramenta de suporte ao ensino (aqui não ficou claro pra mim ainda, seria como ferramenta de suporte a um curso de entrevista motivacional, ou suporte a entrevistas motivacionais em si, com pacientes e tudo ?)
--->
-
-1. instructor gathers information about concepts and situations on each of a group of learners
-2. each learner receives concepts of interest to her as well as situated within her own context with the [Open edX]() system. 
-
-For the purposes of this article we have used the following simplified matrix of concepts and situations within a course to educate healthcare professionals and patients in relation to motivational interviewing. Motivational interviewing, or "a collaborative, person-centered form of guiding to elicit and strengthen motivation for change" interesting in that it is usually targetted at professionals who would like to assist others in achieving change. However, one could argue that the same methods could be used by the people themselves who want to achieve change. In other words, one could train individuals in different contexts, be it for a personal change context or in somebody else's context. In addition, motivational interviewing can also be applied to achieve change in different conceptual areas, such as health, work, among others. 
-
-
-|Concept to be learned |General concept learning | Learning applied to a physical exercice situation | Learning in smoking cessation situation|
-|---|----|----|-----|
-|Resisting the rightning reflex. |Acho que em 4-5 minutos conseguimos fazer um vídeo com as vantagens e o embasamento de resistir ao reflexo de consertar as coisas (n vai ser nada complicado). |Podemos abordar diversos exemplos, por exemplo, um paciente sedentário que fala de uma extremamente sedentária e o profissional tem q resistir. |Muitas possibilidades tb. Um paciente pode dizer q mente a quantidade q fuma ou q fuma uma quantidade absurda...|
-|Listening to your patient’s motivation |Vídeo geral é tranquilo. Dizer basicamente como “ler” motivações. Tenho até vídeo pronto. |Os exemplos podem ir de fazer exercício para diminuir a ansiedade, pela saúde, p melhorar o sono, p melhorar a aparência, etc|Vários motivos podem ser abordados: motivos de saúde, preocupação com o fumo passivo do filho, questões estéticas, etc |
-|Empowering your patient |Basicamente é definir estratégias juntamente com o paciente ao invés de impor soluções.| Ver qual o exercício q o paciente mais gosta, ver qual horário é melhor, ver como começar, etc. | Ver se o paciente quer medicação oral, ou selo de nicotina pela pela, em que dia parar, como diminuir a fissura.|
-
-Based on this simplified matrix, a corresponding workflow in [Open edX]() would be roughly as follows: <!-- transforms below into a table -->
-
-1. Learner logs in 
-2. Learner answers a survey asking her to choose among the following choices:
-	* which two concepts the learner would like to learn among the following choices: (1) Resisting the rightning reflex, (2) listening to your patient’s motivation, (3) empowering your patient
-	* in which single situation the learner would be more likely to apply each of those concepts: (1) Physical exercise and (2) smoking cessation
-3. Based on the responses, the content (videos, exercises and readings) is then presented. For example, if the learner chooses to learn (1) the concept of resisting the rightning reflex in a situation where a patient needs to improve her physical exercise habits and (2) the concept of empowering your patient in a situation where a patient would like to stop smoking, then the ontology would determine that:
-	* both general concept sections (video, exercises and readings) would be delivered to the individual courses of each learner
-	* both concept sections (video, exercises and readings) in their respective situations would be delivered to the individual courses of each learner
-
-<!-- 
-
-move below to Discussion:
-
-	Although not addressed in the present article, the data provided by the same context sensitivity ontology could be applied to the following additional use cases:  (1) infographics containing concepts applied to situations could be dynamically created to meet individual needs of each learner, (2) generation of automatically generated items (exercises) meeting the conceptual and situational needs for each learner, (3) guiding learning paths to feed [Learning Spaces](http://cran.r-project.org/web/packages/DAKS/index.html) -->
-
-
-<!-- conceitos (selecionado por item bank/lucas): reflexo endireitamento, utilizar motivação do paciente ao invés da epidemiologia/profissional, resumir o que o paciente falou; situações (selecionado por lista): adesão medicação, dieta, exercício; learning resources (videos, exercicios/itens, leituras); https://plus.google.com/hangouts/_/calendar/dmluaWNpdXNtYXJhbkBnbWFpbC5jb20.8jd70169ocma1gpkm5p5i8r32g?authuser=0 add gustavo master (A) conceitos tacitos - expressao corporal -->
-
 ### [Open edX]() Environment
 
 The Open edX platform primarily in the Python language on the server side, while Javascript is used for the browser. The plaforms is licensed under the [AGPL]() license, with extensions to the platform being registered under [Apache 2](). Briefly, the Open edX platform includes both a Learning Management System as well as authoring tool, or edX Studio. Extensions are created through [XBlocks](). Other components include the Open Response Assessor, which allows instructors to ask open-ended questions with long-form text answers. 
 
 Of importance in the context of our project, Open edX allows for the inclusion of videos, text in [HTML]() format and a multitude of exercise types. These components are placed in what Open edX calls "units," each unit being clustered within a sub-section, and then a section, multiple sections composing a full course. However, in its current format, Open edX does not allow for different components to be dynamically combined in response to different contexts.
 
+![Figure 2](http://http://inf.ufrgs.br/~vmaran/img2.png "Figure 2: Proposed Software Architecture to Integrate Content Adaptation Based on Context in OpenEDX Environment.")
+To extend funcionalities in [Open edX](), developers can build extensions called XBlocks. To integrate the presented ontology with [Open edX](), we propose the development of two xblocks, called Survey and Content Presentation. This extensions made communications with a web architecture. 
+<!-- descrição da arquitetura -->
+
 ### Ontology for semantic representation of content adaptation in openEDX
 
+<!-- conceitos (selecionado por item bank/lucas): reflexo endireitamento, utilizar motivação do paciente ao invés da epidemiologia/profissional, resumir o que o paciente falou; situações (selecionado por lista): adesão medicação, dieta, exercício; learning resources (videos, exercicios/itens, leituras); https://plus.google.com/hangouts/_/calendar/dmluaWNpdXNtYXJhbkBnbWFpbC5jb20.8jd70169ocma1gpkm5p5i8r32g?authuser=0 add gustavo master (A) conceitos tacitos - expressao corporal -->
+
 <!-- Definição dos conceitos e situações na ontologia -->
+The definition of the ontology was based on Methontology <!-- Fernández-López et al, 1997 -->. First of all, we made a glossary with terms and meanings of concepts, situations and contents based on the previously defined use case.
+<!-- glossario de termos -->
 
 ### Integration with existing relational and document-based databases in [Open edX]()
 
@@ -173,6 +175,12 @@ Isso, temos que ver melhor ainda quais informações de contexto são relevantes
 ## Results and Discussion
 <!-- Pensei em colocarmos na mesma seção. O que acha ? -->
 
+<!-- 
+move below to Discussion:
+
+	Although not addressed in the present article, the data provided by the same context sensitivity ontology could be applied to the following additional use cases:  (1) infographics containing concepts applied to situations could be dynamically created to meet individual needs of each learner, (2) generation of automatically generated items (exercises) meeting the conceptual and situational needs for each learner, (3) guiding learning paths to feed [Learning Spaces](http://cran.r-project.org/web/packages/DAKS/index.html) -->
+
+
 ## Conclusions
 <!-- fechamento -->
 
@@ -188,3 +196,5 @@ Isso, temos que ver melhor ainda quais informações de contexto são relevantes
 <!--(Bellavista et al, 2012)--> Bellavista, P., Corradi, A., Fanelli, M., & Foschini, L. (2012). A survey of context data distribution for mobile ubiquitous systems. ACM Computing Surveys, 44(4), 1–45. doi:10.1145/2333112.2333119
 <!-- (Cooper; Sahami, 2013) --> COOPER, Steve; SAHAMI, Mehran. Reflections on stanford's moocs. Communications of the ACM, v. 56, n. 2, p. 28-30, 2013.
 <!-- (Gutiírrez et al, 2014) --> Gutiírrez-Rojas, Israel, Raquel M. Crespo-García, and Carlos Delgado Kloos. "Adapting an Awareness Tool for Massive Courses: the Case of ClassON." Journal of Universal Computer Science 20.1 (2014): 24-38.
+<!-- (Aubert et al, 2014) --> Aubert, Olivier, Yannick Prié, and Camila Canellas. "Leveraging video annotations in video-based e-learning." arXiv preprint arXiv:1404.4607 (2014).
+<!-- Fernández-López et al, 1997 --> Fernández-López, Mariano, Asunción Gómez-Pérez, and Natalia Juristo. "Methontology: from ontological art towards ontological engineering." (1997).
