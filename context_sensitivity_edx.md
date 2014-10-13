@@ -60,7 +60,7 @@ For the purposes of this article we have used the following simplified matrix of
 
 <!-- modifiquei um pouco -->
 Based on this simplified matrix, a corresponding workflow in [Open edX]() would be roughly as follows (Figure 1):
-![Figure 1](http://http://inf.ufrgs.br/~vmaran/img.png "Figure 1: Sequence Diagram of Learner's first interaction with the course.")
+![Figure 1](http://inf.ufrgs.br/~vmaran/img.png "Figure 1: Sequence Diagram of Learner's first interaction with the course.")
 First, the learner logs into the system (1). Logged in, he recieves a survey (2) and answer it (3) choosing among the following choices:
 	* which two concepts the learner would like to learn among the following choices: (a) Resisting the rightning reflex, (b) listening to your patient’s motivation, (c) empowering your patient
 	* in which single situation the learner would be more likely to apply each of those concepts: (a) Physical exercise and (b) smoking cessation
@@ -144,11 +144,15 @@ Drinking and Routine Practice -->
 
 ### [Open edX]() Environment
 
-The Open edX platform primarily in the Python language on the server side, while Javascript is used for the browser. The plaforms is licensed under the [AGPL]() license, with extensions to the platform being registered under [Apache 2](). Briefly, the Open edX platform includes both a Learning Management System as well as authoring tool, or edX Studio. Extensions are created through [XBlocks](). Other components include the Open Response Assessor, which allows instructors to ask open-ended questions with long-form text answers. 
+<!--
+breve descrição da plataforma
+descrição de materiais
+-->
+* videos
+* HTML
+* exercises
 
-Of importance in the context of our project, Open edX allows for the inclusion of videos, text in [HTML]() format and a multitude of exercise types. These components are placed in what Open edX calls "units," each unit being clustered within a sub-section, and then a section, multiple sections composing a full course. However, in its current format, Open edX does not allow for different components to be dynamically combined in response to different contexts.
-
-![Figure 2](http://http://inf.ufrgs.br/~vmaran/img2.png "Figure 2: Proposed Software Architecture to Integrate Content Adaptation Based on Context in OpenEDX Environment.")
+![Figure 2](http://inf.ufrgs.br/~vmaran/img2.png "Figure 2: Proposed Software Architecture to Integrate Content Adaptation Based on Context in OpenEDX Environment.")
 To extend funcionalities in [Open edX](), developers can build extensions called XBlocks. To integrate the presented ontology with [Open edX](), we propose the development of two xblocks, called Survey and Content Presentation. This extensions made communications with a web architecture. 
 <!-- descrição da arquitetura -->
 
