@@ -150,13 +150,9 @@ move below to Discussion:
 
 ### [Open edX]() Environment
 
-<!--
-breve descrição da plataforma
-descrição de materiais
--->
-* videos
-* HTML
-* exercises
+The Open edX platform primarily in the Python language on the server side, while Javascript is used for the browser. The plaforms is licensed under the [AGPL]() license, with extensions to the platform being registered under [Apache 2](). Briefly, the Open edX platform includes both a Learning Management System as well as authoring tool, or edX Studio. Extensions are created through [XBlocks](). Other components include the Open Response Assessor, which allows instructors to ask open-ended questions with long-form text answers. 
+
+Of importance in the context of our project, Open edX allows for the inclusion of videos, text in [HTML]() format and a multitude of exercise types. These components are placed in what Open edX calls "units," each unit being clustered within a sub-section, and then a section, multiple sections composing a full course. However, in its current format, Open edX does not allow for different components to be dynamically combined in response to different contexts.
 
 ### Ontology for semantic representation of content adaptation in openEDX
 
