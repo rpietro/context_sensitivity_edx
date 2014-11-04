@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY xsp "http://www.owl-ontologies.com/2005/08/07/xsp.owl#" >
+    <!ENTITY adaptation "http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.unijui.edu.br/ontologies/adaptation.owl#"
+     xml:base="http://www.unijui.edu.br/ontologies/adaptation.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:adaptation="http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#">
+    <owl:Ontology rdf:about="http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl">
+        <rdfs:comment rdf:datatype="&xsd;string">Ontology which describes support materials of OpenEDX platform and context information at suggestion process</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#component_has_resource -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;component_has_resource">
+        <rdfs:domain rdf:resource="&adaptation;OpenEDXComponent"/>
+        <rdfs:range rdf:resource="&adaptation;OpenEDXResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#course_about_field -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;course_about_field">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:domain rdf:resource="&adaptation;Course"/>
+        <rdfs:range rdf:resource="&adaptation;KnowledgeField"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#course_has_unit -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;course_has_unit">
+        <rdfs:domain rdf:resource="&adaptation;Course"/>
+        <rdfs:range rdf:resource="&adaptation;Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#course_has_wiki -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;course_has_wiki">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&adaptation;Course"/>
+        <rdfs:range rdf:resource="&adaptation;Wiki"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#course_uses_resource -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;course_uses_resource">
+        <rdfs:domain rdf:resource="&adaptation;Course"/>
+        <rdfs:range rdf:resource="&adaptation;OpenEDXResource"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#knowledgefield_related_to_subfield -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;knowledgefield_related_to_subfield">
+        <rdfs:domain rdf:resource="&adaptation;KnowledgeField"/>
+        <rdfs:range rdf:resource="&adaptation;KnowledgeField"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#knwExp_about_knwField -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;knwExp_about_knwField">
+        <rdfs:domain rdf:resource="&adaptation;KnowledgeExperience"/>
+        <rdfs:range rdf:resource="&adaptation;KnowledgeField"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#student_has_knowledgeExp -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;student_has_knowledgeExp">
+        <rdfs:range rdf:resource="&adaptation;KnowledgeExperience"/>
+        <rdfs:domain rdf:resource="&adaptation;Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#unit_has_sequence -->
+
+    <owl:ObjectProperty rdf:about="&adaptation;unit_has_sequence">
+        <rdfs:range rdf:resource="&adaptation;Sequence"/>
+        <rdfs:domain rdf:resource="&adaptation;Unit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#course_name -->
+
+    <owl:DatatypeProperty rdf:about="&adaptation;course_name">
+        <rdfs:domain rdf:resource="&adaptation;Course"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#sequence_name -->
+
+    <owl:DatatypeProperty rdf:about="&adaptation;sequence_name">
+        <rdfs:domain rdf:resource="&adaptation;Sequence"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#unit_name -->
+
+    <owl:DatatypeProperty rdf:about="&adaptation;unit_name">
+        <rdfs:domain rdf:resource="&adaptation;Unit"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#ContextEntity -->
+
+    <owl:Class rdf:about="&adaptation;ContextEntity">
+        <rdfs:comment rdf:datatype="&xsd;string">Impactos:
+- Entidades de contexto determinam a adaptação de materiais de apoio
+- Entidades de contexto possuem uma descricao
+- Entidades de contexto podem estar relacionadas com outras entidades de contexto</rdfs:comment>
+        <rdfs:comment xml:lang="pt">Descrição: ContextEntity representa qualquer entidade que interfere no processo de adaptação de materiais de apoio.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Course -->
+
+    <owl:Class rdf:about="&adaptation;Course">
+        <rdfs:subClassOf rdf:resource="&adaptation;OpenEDXComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Device -->
+
+    <owl:Class rdf:about="&adaptation;Device">
+        <rdfs:subClassOf rdf:resource="&adaptation;ContextEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#DeviceResource -->
+
+    <owl:Class rdf:about="&adaptation;DeviceResource">
+        <rdfs:subClassOf rdf:resource="&adaptation;ContextEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Discussion -->
+
+    <owl:Class rdf:about="&adaptation;Discussion">
+        <rdfs:subClassOf rdf:resource="&adaptation;OpenEDXResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Event -->
+
+    <owl:Class rdf:about="&adaptation;Event">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment>Descrição de eventos do sistema (aluno -&gt; openedx)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#GeneralTool -->
+
+    <owl:Class rdf:about="&adaptation;GeneralTool">
+        <rdfs:subClassOf rdf:resource="&adaptation;Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#HTMLComponent -->
+
+    <owl:Class rdf:about="&adaptation;HTMLComponent">
+        <rdfs:subClassOf rdf:resource="&adaptation;OpenEDXResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#ImageBasedTool -->
+
+    <owl:Class rdf:about="&adaptation;ImageBasedTool">
+        <rdfs:subClassOf rdf:resource="&adaptation;Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#InteractionEvent -->
+
+    <owl:Class rdf:about="&adaptation;InteractionEvent">
+        <rdfs:subClassOf rdf:resource="&adaptation;Event"/>
+        <rdfs:comment>http://groups.csail.mit.edu/EVO-DesignOpt/groupWebSite/uploads/Site/memoire-quentin-agren%20--%20MOOCdb%20thesis.pdf</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#KnowledgeExperience -->
+
+    <owl:Class rdf:about="&adaptation;KnowledgeExperience">
+        <rdfs:subClassOf rdf:resource="&adaptation;ContextEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#KnowledgeField -->
+
+    <owl:Class rdf:about="&adaptation;KnowledgeField">
+        <rdfs:subClassOf rdf:resource="&adaptation;ContextEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Location -->
+
+    <owl:Class rdf:about="&adaptation;Location">
+        <rdfs:subClassOf rdf:resource="&adaptation;ContextEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#NavigationEvent -->
+
+    <owl:Class rdf:about="&adaptation;NavigationEvent">
+        <rdfs:subClassOf rdf:resource="&adaptation;Event"/>
+        <rdfs:comment>http://groups.csail.mit.edu/EVO-DesignOpt/groupWebSite/uploads/Site/memoire-quentin-agren%20--%20MOOCdb%20thesis.pdf</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#OpenEDXComponent -->
+
+    <owl:Class rdf:about="&adaptation;OpenEDXComponent">
+        <rdfs:comment>http://docs.edx.org</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#OpenEDXResource -->
+
+    <owl:Class rdf:about="&adaptation;OpenEDXResource">
+        <rdfs:comment>http://edx.readthedocs.org/projects/edx-partner-course-staff/en/latest/creating_content/index.html</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Professor -->
+
+    <owl:Class rdf:about="&adaptation;Professor"/>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Recomendation -->
+
+    <owl:Class rdf:about="&adaptation;Recomendation">
+        <rdfs:subClassOf rdf:resource="&adaptation;Event"/>
+        <rdfs:comment>Uma recomendação ou sugestão de material inferida pelo sistema</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#STEMTool -->
+
+    <owl:Class rdf:about="&adaptation;STEMTool">
+        <rdfs:subClassOf rdf:resource="&adaptation;Tool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Sequence -->
+
+    <owl:Class rdf:about="&adaptation;Sequence">
+        <rdfs:subClassOf rdf:resource="&adaptation;OpenEDXComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Student -->
+
+    <owl:Class rdf:about="&adaptation;Student">
+        <rdfs:subClassOf rdf:resource="&adaptation;ContextEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Tool -->
+
+    <owl:Class rdf:about="&adaptation;Tool">
+        <rdfs:subClassOf rdf:resource="&adaptation;OpenEDXResource"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Descricao: LectureMaterial descreve todos os tipos de materiais de apoio oferecidos na plataforma OpenEDX</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">Impactos: 
+- Materiais de apoio estao relacionados a uma area de conhecimento (KnowledgeField)
+- Materiais de apoio sao utilizados em Disciplinas (Discipline)
+- Materiais de apoio podem ser recomendados a alunos (Student)
+- Materiais de apoio sao distribuidos em dispositivos (Device) que possuem recursos compativeis (DeviceResource)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Unit -->
+
+    <owl:Class rdf:about="&adaptation;Unit">
+        <rdfs:subClassOf rdf:resource="&adaptation;OpenEDXComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#VideoComponent -->
+
+    <owl:Class rdf:about="&adaptation;VideoComponent">
+        <rdfs:subClassOf rdf:resource="&adaptation;OpenEDXResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#Wiki -->
+
+    <owl:Class rdf:about="&adaptation;Wiki">
+        <rdfs:subClassOf rdf:resource="&adaptation;OpenEDXComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#SPD7777 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;SPD7777">
+        <rdf:type rdf:resource="&adaptation;Course"/>
+        <adaptation:course_name>Curso online sobre Entrevista Motivacional</adaptation:course_name>
+        <adaptation:course_about_field rdf:resource="&adaptation;motivational_interviewing"/>
+        <adaptation:course_has_unit rdf:resource="&adaptation;unit1"/>
+        <adaptation:course_has_unit rdf:resource="&adaptation;week1"/>
+        <adaptation:course_has_unit rdf:resource="&adaptation;week2"/>
+        <adaptation:course_has_unit rdf:resource="&adaptation;week3"/>
+        <adaptation:course_has_unit rdf:resource="&adaptation;week4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#motivational_interviewing -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;motivational_interviewing">
+        <rdf:type rdf:resource="&adaptation;KnowledgeField"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#orientacoes_sequence2_week1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;orientacoes_sequence2_week1">
+        <rdf:type rdf:resource="&adaptation;HTMLComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#quentionario_sequence2_week1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;quentionario_sequence2_week1">
+        <rdf:type rdf:resource="&adaptation;GeneralTool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#sequence1_unit1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;sequence1_unit1">
+        <rdf:type rdf:resource="&adaptation;Sequence"/>
+        <adaptation:sequence_name>Como funciona o curso</adaptation:sequence_name>
+        <adaptation:component_has_resource rdf:resource="&adaptation;video_apresentacao_curso"/>
+        <adaptation:course_has_wiki rdf:resource="&adaptation;wiki_courseSPD7777"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#sequence1_week1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;sequence1_week1">
+        <rdf:type rdf:resource="&adaptation;Sequence"/>
+        <adaptation:sequence_name>Teoria: Introdução à Entrevista Motivacional</adaptation:sequence_name>
+        <adaptation:component_has_resource rdf:resource="&adaptation;sugestoes_week1"/>
+        <adaptation:component_has_resource rdf:resource="&adaptation;video_introducao"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#sequence2_unit1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;sequence2_unit1">
+        <rdf:type rdf:resource="&adaptation;Sequence"/>
+        <adaptation:sequence_name>Teste seus conhecimentos em entrevista motivacional</adaptation:sequence_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#sequence2_week1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;sequence2_week1">
+        <rdf:type rdf:resource="&adaptation;Sequence"/>
+        <adaptation:sequence_name>Caso Clinico 1</adaptation:sequence_name>
+        <adaptation:component_has_resource rdf:resource="&adaptation;orientacoes_sequence2_week1"/>
+        <adaptation:component_has_resource rdf:resource="&adaptation;quentionario_sequence2_week1"/>
+        <adaptation:component_has_resource rdf:resource="&adaptation;video1_sequence2_week1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#sugestoes_week1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;sugestoes_week1">
+        <rdf:type rdf:resource="&adaptation;HTMLComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#unit1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;unit1">
+        <rdf:type rdf:resource="&adaptation;Unit"/>
+        <adaptation:unit_name>Apresentação do curso (comece por aqui!)</adaptation:unit_name>
+        <adaptation:unit_has_sequence rdf:resource="&adaptation;sequence1_unit1"/>
+        <adaptation:unit_has_sequence rdf:resource="&adaptation;sequence2_unit1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#video1_sequence2_week1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;video1_sequence2_week1">
+        <rdf:type rdf:resource="&adaptation;VideoComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#video_apresentacao_curso -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;video_apresentacao_curso">
+        <rdf:type rdf:resource="&adaptation;VideoComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#video_introducao -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;video_introducao">
+        <rdf:type rdf:resource="&adaptation;VideoComponent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#week1 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;week1">
+        <rdf:type rdf:resource="&adaptation;Unit"/>
+        <adaptation:unit_name>Curso Entrevista Motivacional - Semana 1</adaptation:unit_name>
+        <adaptation:unit_has_sequence rdf:resource="&adaptation;sequence1_week1"/>
+        <adaptation:unit_has_sequence rdf:resource="&adaptation;sequence2_week1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#week2 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;week2">
+        <rdf:type rdf:resource="&adaptation;Unit"/>
+        <adaptation:unit_name>Curso Entrevista Motivacional - Semana 2</adaptation:unit_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#week3 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;week3">
+        <rdf:type rdf:resource="&adaptation;Unit"/>
+        <adaptation:unit_name>Curso Entrevista Motivacional - Semana 3</adaptation:unit_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#week4 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;week4">
+        <rdf:type rdf:resource="&adaptation;Unit"/>
+        <adaptation:unit_name>Curso Entrevista Motivacional - Semana 4</adaptation:unit_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.inf.ufrgs.br/~vmaran/ontologies/adaptation.owl#wiki_courseSPD7777 -->
+
+    <owl:NamedIndividual rdf:about="&adaptation;wiki_courseSPD7777">
+        <rdf:type rdf:resource="&adaptation;Wiki"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

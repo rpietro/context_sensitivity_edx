@@ -5,13 +5,7 @@ legal, tem algum tempo, vamos começar e ver até onde o artigo pode chegar até
 -->
 
 ## Abstract
-<!--
-	// computação na educação
-	// moocs e variação de contexto
-	// entrevista motivacional
-	// importancia do contexto nesse cenario (motivacao)
-	// modelagem e validacao da ontologia
--->
+Context awareness is one of the areas that are at greatest ascendancy in computing. It states that computer systems should use information from the environment to adapt their execution and content in favor of the user. In the area of ​​health education, context awareness has been used in various ways. With the adoption of Massive Open Online Courses, the use of context information can be a determining factor in the success of the courses because the contexts involved in the courses, such as the profile of students, are broader, and the adaptation based on these contexts tends to assist students and teachers. Based on a health course in the area of ​​Motivational Interviewing taught in OpenEDX platform, we modeled an ontology for the adaptation and suggestion of materials to students based on context information. Through a validation on a case study, it was possible to verify that the created ontology assisted the process of adaptation based on context.
 
 ## Introduction
 
@@ -20,7 +14,7 @@ Education is continually changing in relation to teaching processes. In recent y
 Currently, teachers assemble and distribute materials in virtual learning environments (VLE). These materials are distributed and activities are executed in these environments for all participants of the course in the same way, regardless of important context information as the student's profile, their pre-course school history (to verify the abilities of the student in course related fields), among others.
 This problem is compounded in Massive Open Online Courses (MOOCs) because there is a greater variation in relation to cultural, geographical issues and variation in profiles of students. Thus, it is necessary that context information are taken into account in any way in the distribution of materials and activities for students of these courses <!-- (Cooper; Sahami, 2013) (Gutiírrez et al, 2014)-->.
 
-Context awareness has been applied to various fields of application and several ways in computing. One of the most common ways of using context information in computer systems is the retrieval of information based on context. Information retrieval can be applied together with other recovery techniques and their application can be performed in the pre-filtering information recovery, post filtration in information retrieval, or the context modeling in conjunction with the modeling of information [1]() <!--(Adomavicius et al, 2011)-->.
+Context awareness has been applied to various fields of application and several ways in computing. One of the most common ways of using context information in computer systems is the retrieval of information based on context. Information retrieval can be applied together with other recovery techniques and their application can be performed in the pre-filtering information recovery, post filtration in information retrieval, or the context modeling in conjunction with the modeling of information <!--(Adomavicius et al, 2011)-->.
 
 Thus, context awareness has contributed in many applications to provide the retrieval of information, structured or not, to users or external systems.
 Dey et al (2001) defined context as "any information que can be used to characterize the situation of an entity". Recent work have proposed some changes in how context should be treated in computer systems. In these newer definitions <!--(Makris et al, 2013) (Perera et al, 2013)-->, context must be inferred from a continuous flow of information of raw data which is obtained by systems. 
@@ -44,7 +38,7 @@ In the following sections we start by defining an informal use case, which is th
 
 <!-- TEXTO GUSTAVO -->
 Around 117 million Americans have at least one chronic health condition <!-- (Ward et al., 2012)--> and, according to the Centers for Disease Control and Prevention (CDC), 7 of the top 10 causes of death in the United States (US) are chronic diseases <!--(CDC, 2013)-->. Chronic Diseases as for example, heart disease, stroke, cancer, diabetes and obesity, have huge impact in productivity and in health costs <!--(US Department of Health and Human Services, 2014)-->. For example, the costs of just 2 conditions (heart disease and stroke) were about $315.4 billion in 2010 <!--(American Heart Association, 2014)-->.  In this context, we highlight an important particularity of chronic diseases: they are heavily dependent on bevahioral changes to be prevented or treated <!--(Rollnick et al, 2008)-->. Nonetheless, unhealthy habits are extremely common in the adult population <!--(Fryar and Chen,2012; Cogswell, 2012)--> and this contributes to the steady increase of chronic health problems. 
-Two  behavioral interventions, the promotion of physical activity and smoke cessation, would have a large impact on public health if properly motivated <!--(CDC, 2014)-->. Motivational interviewing (MI), a patient-centered approach to behavioral changes has showed to be effective in increasing physical activity and smoking interruption. This group of techniques has been increasingly studied and it efficacy is significant in a broad range of healthy bevahiors <!--(Cole et al, 2011)-->. However, this group of techniques is still not popular among health practitioners and its extremely important to disseminate Motivational Interview for general health care <!--(Anstiss, 2009)-->. 
+Two behavioral interventions, the promotion of physical activity and smoke cessation, would have a large impact on public health if properly motivated <!--(CDC, 2014)-->. Motivational interviewing (MI), a patient-centered approach to behavioral changes has showed to be effective in increasing physical activity and smoking interruption. This group of techniques has been increasingly studied and it efficacy is significant in a broad range of healthy bevahiors <!--(Cole et al, 2011)-->. However, this group of techniques is still not popular among health practitioners and its extremely important to disseminate Motivational Interview for general health care <!--(Anstiss, 2009)-->. 
 MI has some guiding principles <!--(Rollnick et al., 2008)-->. Among them, we highligth the following:
 
 #### 1) Resist the Righting Reflex
@@ -60,7 +54,8 @@ It is the patient’s own reasons for change, and not yours, that are most likel
 It is increasingly clear that outcomes are better when patients take an active interest and role in their own health care. A fourth guiding principle in MI is empowerment—helping patients explore how they can make a difference in their own health. Again, the patient’s own ideas and resources are key here. You know that regular exercise is important, but it is your patients who know best how they could successfully build it into their daily lives. Patients in essence become your consultants on their own lives and on how best to accomplish behavior change. An important role for you in this process is to support their hope that such change is possible and can make a difference in their health. A patient who is active in the consultation, thinking aloud about the why and how of change, is more likely to do something about this afterward. You, the practitioner, are an expert in facilitating the patients’ bringing their expertise to the consultation.
 <!-- /TEXTO GUSTAVO -->
 
-### Informal use case
+<!-- ### Informal use case -->
+### Motivational Scenario
 
 Using as a basis the concepts presented earlier about the area of ​​motivational interviewing, we defined a use case based on the use of [OpenEDX]() to support a MOOC on motivational interviewing. As there are many variants in relation to the context of students and situations they may face in a motivational interviewing in everyday life. Thus, it is necessary to define contextual elements about these situations and how these elements of context can interfere on the recommendation of teaching materials in this course. The main actions to be considered in this case study are:
 
@@ -88,28 +83,35 @@ Based on the responses, the system classifies the available content (4), an pres
 [Open edX]() offers a tool that allows content providers to tag content <!-- Aubert et al, 2014 (precisamos confirmar esta info) -->. This way, it is possible to link the tagged context to context information and give to the learner a set of materials based on his actual context information. 
 
 ### [Open edX]() Environment
-[Open edX]() é uma plataforma de ensino online 
+[Open edX]() é uma plataforma de ensino online utilizada por diversas universidades em diversas áreas de ensino. Sua utilização tem sido praticada principalmente na aplicação de MOOCs. A plataforma possui uma grande comunidade de desenvolvedores envolvidos, que promovem constantes soluções para integração em cursos.
+OpenEDX possui uma série de recursos de apoio aos cursos definidos utilizando a plataforma como base <!-- REF -->.  
 
-<!--
-breve descrição da plataforma
-descrição de materiais
--->
 * videos
 * HTML
 * exercises
 
+To extend funcionalities in [Open edX](), developers can build extensions called XBlocks. To integrate the presented ontology with [Open edX](), we propose the development of two xblocks, called Survey and Content Presentation. This extensions made communications with a web architecture, presented in Figure 2. 
+
 ![Figure 2](http://inf.ufrgs.br/~vmaran/img2.png "Figure 2: Proposed Software Architecture to Integrate Content Adaptation Based on Context in OpenEDX Environment.")
-To extend funcionalities in [Open edX](), developers can build extensions called XBlocks. To integrate the presented ontology with [Open edX](), we propose the development of two xblocks, called Survey and Content Presentation. This extensions made communications with a web architecture. 
-<!-- descrição da arquitetura -->
+
+<!-- le me texto -->
+Esta arquitetura utiliza dois bancos de dados para realizar o armazenamento de informações. Um deles é relacional, e armazena as informações referentes a plataforma OpenEDX, sobre cursos, alunos e ferramentas. O banco de dados com suporte a linguagem JSON por sua vez, armazena as definições de contexto utilizadas na personalização e sugestão de materiais de ensino. Desta forma, o Serviço de Gerenciamento de Bancos de Dados realiza a integração de frameworks externos como a OWL-API para o gerenciamento de ontologias e o motor de inferência Pellet. Assim, as definições utilizadas em memória por estes frameworks podem ser armazenadas e recuperadas no banco de dados.
+
+O Engine Service realiza o controle dos serviços envolvidos na arquitetura e realiza a integração entre o Serviço de gerenciamento de bancos de dados e o processador de consultas, que por sua vez recebe requisições de consultas que envolvem informações de contexto e informações de domínio (as informações específicas do ambiente OpenEDX). Este serviço por sua vez decompõe as consultas em subconsultas, realizadas nos bancos de dados pelo serviço gerenciador de banco de dados.
+
+O serviço de comunicação implementa interfaces de comunicação entre os Xblocks criados e integrados ao OpenEDX e a arquitetura de adaptação baseada em contexto.
+Para realizar a adaptação de conteúdo baseado em contexto, e utilizar a arquitetura de forma adequada, é necessária a definição de uma ontologia que descreva:
+(i) informações de contexto que podem ser levadas em consideração na adaptação e sugestão de materiais de apoio;
+(ii) informações específicas do domínio de aplicação (específicas da plataforma OpenEDX). Esta modelagem é necessária para que seja possível realizar o alinhamento entre informações específicas do domínio e informações de contexto;
+(iii) modelo de alinhamento entre informações de contexto e informações específicas de domínio.
+Assim, a próxima seção apresenta uma modelagem baseada em ontologias para a representação de contexto e para adaptação e sugestão de materiais de apoio para a plataforma OpenEDX.
+<!-- /le me texto -->
 
 ### Ontology for semantic representation of content adaptation in openEDX
 
 <!-- Definição dos conceitos e situações na ontologia -->
 The definition of the ontology was based on Methontology <!-- Fernández-López et al, 1997 -->. First of all, we made a glossary with terms and meanings of concepts, situations and contents based on the previously defined use case.
 <!-- glossario de termos -->
-
-
-
 <!-- conceitos (selecionado por item bank/lucas): reflexo endireitamento, utilizar motivação do paciente ao invés da epidemiologia/profissional, resumir o que o paciente falou; situações (selecionado por lista): adesão medicação, dieta, exercício; learning resources (videos, exercicios/itens, leituras); https://plus.google.com/hangouts/_/calendar/dmluaWNpdXNtYXJhbkBnbWFpbC5jb20.8jd70169ocma1gpkm5p5i8r32g?authuser=0 add gustavo master (A) conceitos tacitos - expressao corporal -->
 
 ### Integration with existing relational and document-based databases in [Open edX]()
@@ -128,15 +130,14 @@ Isso, temos que ver melhor ainda quais informações de contexto são relevantes
 <!-- 
 move below to Discussion:
 
-	Although not addressed in the present article, the data provided by the same context sensitivity ontology could be applied to the following additional use cases:  (1) infographics containing concepts applied to situations could be dynamically created to meet individual needs of each learner, (2) generation of automatically generated items (exercises) meeting the conceptual and situational needs for each learner, (3) guiding learning paths to feed [Learning Spaces](http://cran.r-project.org/web/packages/DAKS/index.html) -->
-
+	Although not addressed in the present article, the data provided by the same context sensitivity ontology could be applied to the following additional use cases: (1) infographics containing concepts applied to situations could be dynamically created to meet individual needs of each learner, (2) generation of automatically generated items (exercises) meeting the conceptual and situational needs for each learner, (3) guiding learning paths to feed [Learning Spaces](http://cran.r-project.org/web/packages/DAKS/index.html) -->
 
 ## Conclusions
 <!-- fechamento -->
 
 ## References
 <!-- legal, por favor use bibtex que o pandoc integra - veja http://johnmacfarlane.net/pandoc/demos.html -->
-<!--(Adomavicius et al, 2011)-->[1]() Adomavicius, G., Mobasher, B., Ricci, F., & Tuzhilin, A. (2011). Context-Aware Recommender Systems, 67–80.
+<!--(Adomavicius et al, 2011)--> Adomavicius, G., Mobasher, B., Ricci, F., & Tuzhilin, A. (2011). Context-Aware Recommender Systems, 67–80.
 <!--Dey et al (2001)--> Dey A. K., Abowd G. D., Salber D., “A conceptual framework and a toolkit for supporting the rapid prototyping of context-aware applications,” Hum.-Comput. Interact., vol. 16, pp. 97–166, December 2001. http://dx.doi.org/10. 1207/S15327051HCI1623402
 <!--(Makris et al, 2013)--> Makris, P., Member, S., and Skoutas, D. N., “A Survey on Context-Aware Mobile and Wireless Networking : On Networking and Computing Environments ’ Integration,” vol. 15, no. 1, pp. 362–386, 2013.
 <!--(Perera et al, 2013)--> Perera, C., S. Member, A. Zaslavsky, and P. Christen, “Context Aware Computing for The Internet of Things : A Survey,” pp. 1–41, 2013.
